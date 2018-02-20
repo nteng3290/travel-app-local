@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv=“Content-Security-Policy” content=“upgrade-insecure-requests”>
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand|Open+Sans" rel="stylesheet">
+</head>
+<body>
+
+    <!-- === Page header goes here === -->
+    
+    <header>
+        <div class="header-banner wrapper">
+            <h1>Choose your next</br> travel destination</h1>
+            <h2>Let's find out what you're looking for!</br> (it won’t take longer than
+            a few minutes)</h2>
+            <button id="firstButton">
+                <img src="images/plane.svg" alt="">
+            </button>
+        </div>
+    </header>
+
+    <!-- === Page main content goes here === -->
+
+    <main>
+        <form id="countryParams">
+
+            <!-- === First question goes here === -->
+
+            <section id="scrollStopSecond" class="polaroid-container firstDiv">
+                <div class=" question-01 slide-container wrapper">
+                    <div class="happinessQuestion">
+                        <label for="happinessValue">
+                            <h2>Do you want a place where the glass of the locals is half empty or half full?</h2>
+                        </label>
+                        <input type="range" min="2500" max="7600" step="500" class="slider" id="happinessValue" name="happinessValue">
+                    </div>
+                    <button id="secButton">
+                        <img src="images/plane.svg" alt="">
+                    </button>
+                </div>
+            </section>
+
+            <!-- === Second question goes here === -->
+
+            <section id="scrollStop" class="polaroid-container secDiv">
+                <div class="question-02 slide-container wrapper">
+                    <div class="forestQuestion">
+                        <label for="forestValue wrapper">
+                            <h2>
+                                Do you wanna get lost in the forrest or in bustling city streets?
+                            </h2>
+                        </label>
+                        <input type="range" min="0" max="100" step="5%" class="slider" id="forestValue" name="forestValue" />
+                    </div>
+                    <button id="thirdButton">
+                        <img src="images/plane.svg" alt="">
+                    </button>
+                </div>
+            </section>
+
+            <!-- === Third question goes here === -->
+
+            <section id="scrollStop" class="polaroid-container thirdDiv">
+                <div class="question-03 slide-container wrapper">
+                    <div class="internetQuestion">
+                        <label for="internetValue">
+                            <h2>
+                                Do you wanna be able to be online all day or spend far too much time trying to connect with the outside world?
+                            </h2>
+                        </label>
+                        <input type="range" min="0" max="100" step="5" class="slider" id="internetValue" name="internetValue" />
+                    </div>
+                    <button type="submit" id="fourthButton">SUBMIT</button>
+                </div>
+
+            </section>
+
+        </form>
+
+    <!-- === Page results goes here === -->
+
+        <section id="scrollStop" class="results fourthDiv hidden">
+            <div class="overlay"></div>
+            <div class="result-container">
+                <div class="flag">
+                    <div class="pop-up hidden">
+                        <span class="close"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="loading">
+                <i class="fas fa-spinner fa-pulse"></i>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- === Page footer goes here === -->
+
+    <footer>
+        <div class="footer-container clearfix">
+            <p class="copyright">© 2018 Natasha Teng & Manon Rugge, All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- === Page script goes here === -->
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+
+    <script src="scripts/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+$primary: #fff;
+$secondary: #141178;
+$background: #f6f3e5;
+$heading: 'Just Another Hand', cursive;
+$secHeading: 'Open Sans', sans-serif;
+
+.polaroid{
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    height: 90vh;
+    margin: 25px auto;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@import "partials/setup.scss";
+@import "partials/header.scss";
+@import "partials/main.scss";
+@import "partials/results.scss";
+
+html{
+    font-size: 10px;
+}
+button {
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 50%;
+    left: 0;
+    right: 0;
+    border: 2px solid $primary;
+    background-color: rgba(255,255,255,0.3);
+    img {
+        text-align: center;
+        width: 80%;
+        padding-top: 5%;
+    }
+}
+
+body {
+    font-family: $heading;
+    background-color: $background;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $primary;
+}
+
+h2 {
+    font-size: 2.2rem;
+    line-height: 30px; 
+}
+
+h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+p {
+    line-height: 25px;
+}
+
+footer {
+    background-color:white;
+     p {
+        color: #141178;
+        font-size: 1.8rem;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+        margin: 0;
+    }
+}

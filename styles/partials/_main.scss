@@ -1,0 +1,174 @@
+.slider {
+    margin: 30px 0;
+    width: 60%;
+    border-radius: none;  
+    outline: none;
+    height: 5px;
+    -webkit-appearance: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: $primary;
+    cursor: pointer;
+    border: none;
+}
+
+.slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: $primary;
+    cursor: pointer;
+    border: none;
+}
+
+.question-01,
+.question-02,
+.question-03 {
+    @extend .polaroid;
+    padding: 250px 0px 0px 0px;
+    h2  {
+        font-size: 1.8rem;
+        padding-bottom: 20px;
+    } 
+}
+
+.question-01 {
+    background-image: url("./../images/happy_filter.jpg");     
+}
+
+.question-02 {
+    background-image: url("./../images/forrest_filter.jpg");  
+}
+
+.question-03 {
+    background-image: url("./../images/internet_filter.jpg");  
+}
+
+
+.rotate{
+    animation:rotate 0.5s both;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.polaroid-container {
+    position: relative;
+}
+
+#fourthButton {
+    color: $secondary;
+    font-size: 1.6rem;
+    padding-top: 5px;
+    text-align: center;
+    letter-spacing: 5px;
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+}
+
+
+.happinessQuestion,
+.forestQuestion,
+.internetQuestion{
+    width: 90%;
+}
+.happinessQuestion{
+    position: relative;
+    &::before{
+        content:"half empty";
+        position: absolute;
+        left:30px;
+        bottom:0;
+        color: white;
+        font-size: 1.8rem;
+        @media (max-width: 480px) {
+            left:0;
+        }
+    }
+    &::after{
+        content:"half full";
+        position: absolute;
+        right:30px;
+        bottom:0;
+        color: white;
+        font-size: 1.8rem;
+        @media (max-width: 480px) {
+            right:0;
+        }
+    }
+}
+.forestQuestion{
+    position: relative;
+    &::before{
+        content:"big city";
+        position: absolute;
+        left:30px;
+        bottom:0;
+        color: white;
+        font-size: 1.8rem;
+        @media (max-width: 480px) {
+            left:0;
+            width: 50px;
+            text-align: center;
+            font-size: 1.4rem;
+        }
+    }
+    &::after{
+        content:"full forest";
+        position: absolute;
+        right:30px;
+        bottom:0;
+        color: white;
+        font-size: 1.8rem;
+        @media (max-width: 480px) {
+            right:0;
+            width: 50px;
+            text-align: center;
+            font-size: 1.4rem;
+        }
+    }
+}
+.internetQuestion{
+   position: relative;
+    &::before{
+        content:"low connection";
+        position: absolute;
+        left:30px;
+        bottom:0;
+        color: white;
+        font-size: 1.8rem;
+        @media (max-width: 480px) {
+            left:0;
+            width: 50px;
+            text-align: center;
+            font-size: 1.4rem;
+        }
+    }
+    &::after{
+        content:"high connection";
+        position: absolute;
+        right: 30px;
+        bottom:0;
+        color: white;
+        font-size: 1.8rem;
+        @media (max-width: 480px) {
+            right:0;
+            width: 50px;
+            text-align: center;
+            font-size: 1.4rem;
+        }
+    } 
+}
